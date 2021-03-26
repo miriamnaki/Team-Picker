@@ -23,6 +23,8 @@ app.use(logger('dev'));
 
 const cohortRouter = require('./routes/cohorts')
 app.use('/cohorts',cohortRouter)
+const rootRouter = require('./routes/root')
+app.use('/',rootRouter)
 
 const knex = require('./db/client');
 

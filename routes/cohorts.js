@@ -9,10 +9,15 @@ router.get('/',(req,res)=>{
     res.render('cohorts/index',{cohort:cohort})
   })
 })
+router.get('/',(req,res)=>{
+  res.render('cohorts/index')
+})
 
 router.get('/new',(req,res)=>{
   res.render('cohorts/new')
 })
+
+
 router.get('/home',(req,res)=>{
   res.render('cohorts/home')
 })
