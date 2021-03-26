@@ -1,4 +1,4 @@
-# HangmanGame - Word Guessing Game
+# Team Picker - Random Team Generator
 ## Table of Contents
 * Summary
 * Technology Used
@@ -41,11 +41,10 @@ This is an application that enables the user to generate teams/ groups randomly 
 
 ## Installation:
 * git clone URL
-* Right
-* Right click index.html and copy path
-* Paste path in browser
-##### or
-Right click index.html and open with live server
+* cd into project
+* Run npm i
+* Run npm start
+* On the browser: https://localhost:3000
 
 
 
