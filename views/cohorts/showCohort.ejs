@@ -6,13 +6,12 @@
     <a class="nav-link active" aria-current="page" href="/cohorts/home"><h5>Home</h5></a> 
     <a class="nav-link active" aria-current="page" href="/cohorts"><h5>Cohorts</h5></a> 
     <a class="nav-link active" aria-current="page" href="/cohorts/new"><h5>New Cohort</h5></a> 
-    <a class="nav-link active" aria-current="page" href="/cohorts/<%=cohort.id%>/edit"><h5>Edit</h5></a> 
     <form action="/cohorts/<%=cohort.id%>" method="POST">
       <!-- <button class="nav-link-active">DELETE</button>  -->
       <!-- <a class="nav-link active" aria-current="page" href="/cohorts/"><h5>Delete</h5></a>  -->
       
      <div id="underline" class="form-group">
-       <input type="submit"class="btn btn-link"  value="Delete" style="text-decoration: none;">
+       <input type="submit"class="btn btn-link"  value="DELETE" style="text-decoration: none;">
 
      </div>
             <input type='hidden' name='_method' value='DELETE'>
@@ -67,6 +66,12 @@
         <div class="form-group">
           <input type="submit"class="btn btn-outline-primary btn-lg btn-block" value="Assign Teams">
         </div>
+
+        <!-- edit and delete buttons -->
+        <div>
+          <a href="/cohorts/<%=cohort.id%>/edit"><h5 class='btn btn-primary'>Edit</h5></a> 
+
+        </div> 
 
         
     </form>
