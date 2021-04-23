@@ -28,8 +28,10 @@ app.use('/',rootRouter)
 
 const knex = require('./db/client');
 
-const ADDRESS = 'localhost'; 
-const PORT = 3000;
-app.listen((process.env.PORT || 5000), () => {
-  console.log(`Server listening on ${ADDRESS}:${PORT}`);
+// const ADDRESS = 'localhost'; 
+// const PORT = 3000;
+const host = '0.0.0.0';
+const port = process.env.PORT || 3000;
+app.listen(host,port, () => {
+  console.log(`Server listening on ......`);
 });
