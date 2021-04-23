@@ -2,23 +2,23 @@
 
 module.exports = {
 
-  // development: {
-  //   client: 'pg',
-  //   connection: {
+  development: {
+    client: 'pg',
+    connection: {
      
-  //     database: 'cohort_db'
+      database: 'cohort_db'
     
-  // },
+  },
   
 
-  //   migrations: {
-  //     tableName: 'migrations',
-  //     directory: './db/migrations'
-  //   },
-  //   seeds:{
-  //     directory:'./db/seeds'
-  //   }
-  // },
+    migrations: {
+      tableName: 'migrations',
+      directory: './db/migrations'
+    },
+    seeds:{
+      directory:'./db/seeds'
+    }
+  },
     production: {
       client: 'pg',
       connection: process.env.DATABASE_URL,
@@ -26,6 +26,7 @@ module.exports = {
           directory: './db/migrations',
       },
       seeds: { directory: './db/seeds' },
+      ssl:true
     }
 
 };
