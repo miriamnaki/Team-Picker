@@ -30,6 +30,6 @@ const knex = require('./db/client');
 
 const ADDRESS = 'localhost'; 
 const PORT = 3000;
-app.listen(PORT, ADDRESS, () => {
+app.listen((process.env.PORT || 5000), () => {
   console.log(`Server listening on ${ADDRESS}:${PORT}`);
 });
